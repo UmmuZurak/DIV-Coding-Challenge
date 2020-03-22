@@ -1,0 +1,19 @@
+<div id="search">
+  <div class="search-content">
+    <a href="/" id="close"><button type="submit">X</button></a>
+    <div class="search-input">
+      <form action="/search" method="get">
+        <input
+          type="text"
+          name="tags"
+          placeholder="Search training here.."
+          value="<%= searchOptions.tags %>"
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div class="search-text">
+      <%- include('./partials/search-item.ejs')%>
+    </div>
+  </div>
+</div>

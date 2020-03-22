@@ -1,0 +1,10 @@
+<% trainings.forEach(training => { %>
+    <div class="training-text-item">
+      <h3><%= training.name %></h3>
+      <p>Description: <%= training.description %></p>
+      <p>Duration: <%= training.duration %></p>
+      <p>Development stack: <%= training.stack %></p>
+      <p>Price: GHC <%= training.price %></p>
+    </div>
+    <% }) %>
+    

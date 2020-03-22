@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #474747;
+  --lighter-gray: #f9fafb;
+  --light-gray: #f4f5f7;
+  --gradient: linear-gradient(-225deg, #9efbd3 0%, #57e9f2 48%, #45d4fb 100%);
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+}
+
+/* menu styling */
+.menu-container {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  color: var(--black);
+  background: white;
+}
+
+.menu {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.nav-items li {
+  display: inline;
+  margin: 1.5rem;
+}
+
+.apply {
+  padding: 0.5rem 0.9rem;
+  border-radius: 1.2em;
+  background: var(--gradient);
+  color: white;
+}
+
+.apply a {
+  color: white;
+}
+/* end of menu styling */
+
+/* header styling */
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--lighter-gray);
+}
+
+.header-content {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header-content > div {
+  width: 45%;
+}
+
+.header-content-text {
+  padding: 8rem 0;
+}
+
+.header-content-text h1,
+.header-content-text p {
+  margin-bottom: 1.2rem;
+}
+
+.header-content-text p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.header-content-image {
+  position: absolute;
+  width: 60%;
+  left: 48%;
+}
+
+.apply-button {
+  padding: 0.5rem 0.9rem;
+  border-radius: 1.2em;
+  width: 8rem;
+  background: var(--gradient);
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+}
+/* end of header styling */
+
+/* about styling */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.about-content {
+  width: 85%;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content-title {
+  width: 70%;
+  text-align: center;
+  line-height: 1.7rem;
+  padding-bottom: 2rem;
+}
+
+.about-content-title h2 {
+  padding-bottom: 1.6rem;
+}
+
+.about-content-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.about-content-text > div {
+  width: 30%;
+}
+
+.text-image {
+  width: 30%;
+  background: var(--gradient);
+  padding: 1.3rem 0.8rem;
+  border-radius: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.text-image img {
+  width: 85%;
+}
+
+.about-text-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-text-item h3 {
+  padding-bottom: 1.5rem;
+}
+
+.about-text-item p {
+  line-height: 1.7rem;
+  text-align: left;
+}
+/* end of about styling */
+
+/* training content */
+.training-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-gray);
+}
+
+.training-content {
+  width: 85%;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.training-content-title {
+  text-align: center;
+  width: 70%;
+  line-height: 1.7rem;
+  padding-bottom: 2rem;
+}
+
+.training-content-title h2 {
+  padding-bottom: 1.6rem;
+}
+
+.training-content-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.training-content-text h3 {
+  padding-bottom: 1rem;
+}
+
+.training-content-text p {
+  padding-bottom: 1rem;
+  line-height: 1.7rem;
+}
+
+.training-text-item {
+  width: 31%;
+  background: white;
+  padding: 1.8rem;
+  border-radius: 0.5em;
+}
+/* end of training content */
+
+/* modal styling */
+#search {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-content {
+  background: var(--light-gray);
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-input {
+  width: 50rem;
+  height: 10%;
+  background: white;
+  border-radius: 2em;
+}
+
+.search-input form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input input {
+  width: 80%;
+  background: none;
+  border: none;
+  outline: none;
+  height: 80%;
+  margin-left: 1.5rem;
+}
+
+.search-input button {
+  width: 10%;
+  height: 100%;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border: none;
+  background: var(--gradient);
+  color: white;
+  font-size: 1em;
+  outline: none;
+}
+
+.search-input button:hover {
+  cursor: pointer;
+}
+
+.search-text {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  overflow: scroll;
+}
+
+.search-text-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 1em;
+  margin: 1rem;
+  width: 45%;
+  height: 40%;
+}
+
+#close {
+  display: flex;
+  align-self: flex-end;
+  text-decoration: none;
+}
+
+#close button {
+  background: none;
+  border: none;
+  margin: 1rem;
+  font-size: 1.2em;
+  outline: none;
+}
+
+/* end of modal styling */
+
+/* footer */
+.footer-container {
+  width: 100%;
+  background: #2d314e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-item h3 {
+  text-decoration: underline;
+  padding-bottom: 0.6rem;
+}
+
+.footer-item p {
+  padding-bottom: 0.3rem;
+}
+
+.socials .fa {
+  margin: 0.7rem;
+  font-size: 1.6em;
+}
+/* end of footer */

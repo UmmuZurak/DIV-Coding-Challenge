@@ -1,11 +1,9 @@
-// const searchIcon = document.getElementById("search-icon");
-// const search = document.getElementById("search");
-// const close = document.getElementById("close");
+const hamburger = document.getElementById("hamburger");
+const hamburgerMenu = document.getElementById("bars-menu");
 
-// searchIcon.addEventListener("click", function() {
-//   search.style.display = "block";
-// });
+hamburger.addEventListener("click", displayMenu);
 
-// close.addEventListener("click", function() {
-//   search.style.display = "none";
-// });
+function displayMenu() {
+  hamburgerMenu.classList.toggle("hide");
+}
+

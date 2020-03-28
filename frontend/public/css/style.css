@@ -33,6 +33,7 @@ body {
 
 .menu {
   width: 85%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,18 +72,16 @@ body {
 
 .header-content {
   width: 85%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
-.header-content > div {
-  width: 45%;
-}
-
 .header-content-text {
   padding: 8rem 0;
+  width: 45%;
 }
 
 .header-content-text h1,
@@ -122,6 +121,7 @@ body {
 
 .about-content {
   width: 85%;
+  max-width: 1200px;
   padding: 6rem 0;
   display: flex;
   flex-direction: column;
@@ -142,6 +142,7 @@ body {
 
 .about-content-text {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 3rem;
@@ -195,6 +196,7 @@ body {
 
 .training-content {
   width: 85%;
+  max-width: 1200px;
   padding: 6rem 0;
   display: flex;
   flex-direction: column;
@@ -215,6 +217,7 @@ body {
 
 .training-content-text {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 3rem;
@@ -342,6 +345,7 @@ body {
 
 .footer-content {
   width: 60%;
+  max-width: 900px;
   padding: 4rem 0;
   display: flex;
   justify-content: space-between;
@@ -368,3 +372,160 @@ body {
   font-size: 1.6em;
 }
 /* end of footer */
+
+/* hamburger menu styling */
+.hide {
+  display: none;
+}
+
+.hamburger {
+  position: relative;
+}
+
+.fa-bars {
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+
+.bars-menu {
+  background: white;
+  padding-top: 5rem;
+  position: absolute; /* Add these */
+  top: -25px;
+  left: -60px;
+  z-index: 1;
+  text-align: center;
+}
+
+.bars-menu li {
+  list-style: none;
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+}
+
+/* end of hamburger menu styling  */
+
+/* responsiveness */
+@media (max-width: 600px) {
+  .nav-items {
+    display: none;
+  }
+
+  .apply {
+    /* padding: 0.5rem 0.4rem; */
+    /* border-radius: 1.2em; */
+    background: var(--gradient);
+    color: white;
+    font-size: 1em;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .header-content-image {
+    position: relative;
+    width: 80%;
+    left: 0;
+    order: -1;
+    padding-top: 4rem;
+  }
+
+  .header-content-text {
+    padding: 4rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-content-text {
+    justify-content: center;
+  }
+
+  .about-content-text > div {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .about-content-text > div:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .training-content-text {
+    justify-content: center;
+  }
+
+  .training-content-text > div {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .training-content-text > div:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .footer-content {
+    width: 85%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-content > div {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-content > div:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 990px) {
+  .nav-items {
+    display: none;
+  }
+
+  .header-content-text {
+    padding: 4rem 0;
+  }
+
+  .about-content-text {
+    justify-content: center;
+  }
+
+  .about-content-text > div {
+    width: 47%;
+    margin-bottom: 3rem;
+  }
+
+  .about-content-text > div:first-of-type {
+    margin-right: 2rem;
+  }
+
+  .about-content-text > div:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .training-content-text {
+    justify-content: center;
+  }
+
+  .training-content-text > div {
+    width: 47%;
+    margin-bottom: 3rem;
+  }
+
+  .training-content-text > div:first-of-type {
+    margin-right: 2rem;
+  }
+
+  .training-content-text > div:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 991px) {
+  .hamburger {
+    display: none;
+  }
+}
+/* end of responsiveness */
